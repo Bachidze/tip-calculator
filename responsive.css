@@ -1,0 +1,75 @@
+@media (width >= 1440px){
+    .container{
+        display: flex;
+        align-items: center;
+        width: 920px;
+        height: 481px;
+        border-radius: 20px;
+    }
+
+    .second-container{
+        width: 413px;
+        height: 417px;
+    }
+
+    .reset{
+        margin-top: 110px;
+    }
+
+    .meore label{
+        width: 120px;
+        height: 46px;
+    }
+
+
+    .style{
+        margin-left: 10px;
+        width: 90px;
+        height: 46px;
+    }
+
+    .reset1{
+        width: 333px;
+        height: 48px;
+    }
+
+    .header-1 img{
+        margin-bottom: 37px;
+    }
+
+
+    .flex2{
+        margin-top: 20px;
+    }
+
+    .reset1:hover{
+        background: #9FE8DF;
+        cursor: pointer;
+        transition: 0.6s;
+    }
+
+    .second-container{
+        margin-left: 70px;
+    }
+
+    h1{
+        font-size: 48px;
+    font-family: Space Mono;
+    font-weight: 700;
+    word-wrap: break-word;
+    }
+
+    .input-1,.secondinput{
+        width: 379px;
+        height: 45px;
+        padding-left: 280px;
+        border-radius: 5px;
+    }
+
+    .meore{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+
+}
