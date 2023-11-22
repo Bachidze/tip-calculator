@@ -107,6 +107,8 @@ input{
     width: 0;
 }
 
+
+
 .meore label{
     display: inline-block;
     padding: 10px 20px;
@@ -128,6 +130,11 @@ input{
     background-color: #26C2AE;
     border: none;
     outline: none;
+}
+
+label:hover{
+    background-color: #26C2AE;
+    transition: 0.7s;
 }
 
 
