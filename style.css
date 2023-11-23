@@ -20,11 +20,12 @@ body{
 .container{
     background-color: #fff;
     width: 375px;
-    height: 760px;
+    height: 790px;
     margin: 0 auto;
     border-radius: 12px 12px 0 0;
     padding: 32px 32px;
 }
+
 
 h2{
     color: #5E7A7D;
@@ -49,6 +50,7 @@ h2{
     outline: none;
     border: none;
     margin-bottom: 32px;
+    border-radius: 5px;
 }
 
 
@@ -98,6 +100,7 @@ input{
     height: 50px;
     color:white;
     background-color: #00474B;
+    text-align: end;
 }
 
 
@@ -125,6 +128,10 @@ input{
     cursor: pointer;
 }
 
+p{
+    color: red;
+    margin-top: 15px;
+}
 
 .meore input[type = 'radio']:checked + label{
     background-color: #26C2AE;
@@ -133,6 +140,11 @@ input{
 }
 
 label:hover{
+    background-color: #26C2AE;
+    transition: 0.7s;
+}
+
+.style:hover{
     background-color: #26C2AE;
     transition: 0.7s;
 }

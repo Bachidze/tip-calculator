@@ -1,11 +1,11 @@
-
-
  const billel = document.querySelector('#bill')
 const tipamountel = document.querySelector('#tip')
 const totalamountel = document.querySelector('#total')
 const totalpeopleel = document.querySelector('#peopele1')
 const resetel = document.querySelector('#reset1')
 const tipels = document.querySelectorAll('input[name="tip"]') 
+const p = document.querySelector('p')
+const gio = document.querySelector('.giorgi')
 
 function recalculatetotal(){
     const billamount = getbill()
@@ -40,7 +40,34 @@ tipels.forEach((tipel) => {
     tipel.addEventListener('change', recalculatetotal);
 });
 
+totalpeopleel.addEventListener('click',()=>{
+    totalpeopleel.style.border = '2px solid red'
+    p.innerText = 'Please enter only numbers.';
+})
+
 resetel.addEventListener('click', () => {
     document.getElementById('gio').reset();
     recalculatetotal();
 });
+
+billel.addEventListener('click',()=>{
+    billel.style.border = '2px solid green'
+})
+
+function isValidNumber(value) {
+    return /^\d+$/.test(value);
+}
+
+totalpeopleel.addEventListener('input', function () {
+    if (!isValidNumber(totalpeopleel.value)) {
+        p.innerText = 'Please enter only numbers.';
+        totalpeopleel.parentElement.appendChild(p);
+        totalpeopleel.classList.add('red');
+    } else {
+        p.innerText = ''; 
+        totalpeopleel.parentElement.removeChild(p);
+        totalpeopleel.classList.remove('red');
+        recalculatetotal();
+    }
+});
+
